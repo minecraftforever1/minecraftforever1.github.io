@@ -18,6 +18,10 @@ var enemyHealth = 1000;
 var normalAttack =  100;
 var specialAttack =  400;
 
+//vars for the HP text
+var userhptext = document.getElementById('userHPText');
+var enemyhptext = document.getElementById('enemyHPText');
+
 //vars for the HP bars
 var userbar =  document.getElementById('userbar');
 var enemybar =  document.getElementById('enemybar');
@@ -31,6 +35,7 @@ attackButton.addEventListener('click', function(){
   word.innerHTML = "normal attack used";
   enemyHealth = enemyHealth - normalAttack;
   enemybar.value=enemyHealth;
+  enemyhptext.innerHTML = enemyHealth;
   
 });
 
@@ -38,14 +43,16 @@ specialButton.addEventListener('click', function(){
   word.innerHTML = "special attack!!";
    enemyHealth = enemyHealth - specialAttack;
    enemybar.value=enemyHealth;
+   enemyhptext.innerHTML = enemyHealth;
 });
 
 reset.addEventListener('click', function(){
- word.innerHTML = "charmander i chose you!"
-  enemyHealth = 1000;
+ word.innerHTML = "charmander i chose you!";
+   enemyHealth = 1000;
  userHealth =  1000;
   enemybar.value=enemyHealth;
   userbar.value=userHealth;
+  enemyhptext.innerHTML = enemyHealth;
 });
 
   
