@@ -1,0 +1,66 @@
+h1 {
+	color: red;
+}
+
+#one {
+	width: 200px;
+}
+
+#me {
+	width: 200px;
+}
+
+#me1 {
+	width:300px;
+}
+
+#mainn {
+	text-align: center;
+}
+
+.img-div {
+	text-align: center;
+}
+
+* {
+  font-family: "Press Start 2P";
+}
+
+#pokemon {
+	width:100px;
+} 
+
+#bulbasaurdiv {
+  width: 45%;
+  border: 1px solid green;
+  float: right;
+ text-align:center;
+}
+
+#bigdiv {
+  border: 5px solid blue;
+  width: 100%;
+  background-image: url("http://orig05.deviantart.net/e25b/f/2014/308/3/c/pokemon_x_and_y_battle_background_16_by_phoenixoflight92-d8594wx.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#chardiv {
+  width: 45%;
+  border: 1px solid red;
+  margin-top: 20%;
+  text-align:center;
+}
+
+progress {
+  display: block;
+  margin: 0 auto;
+}
+
+#bullbasaur {
+	width: 150px;
+}
+
+#char {
+	width:150px;
+}
