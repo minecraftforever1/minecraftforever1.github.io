@@ -26,41 +26,34 @@ h1 {
   font-family: "Press Start 2P";
 }
 
-#pokemon {
-	width:100px;
+#bul{
+	width: 60%;
 } 
 
-#bulbasaurdiv {
+#charm {
+  width: 80%;
+}
+
+#bulbasaurDiv {
   width: 45%;
-  border: 1px solid green;
+  text-align: center;
   float: right;
- text-align:center;
 }
 
 #bigdiv {
-  border: 5px solid blue;
   width: 100%;
-  background-image: url("http://orig05.deviantart.net/e25b/f/2014/308/3/c/pokemon_x_and_y_battle_background_16_by_phoenixoflight92-d8594wx.png");
-  background-repeat: no-repeat;
+   background-image: url("http://orig05.deviantart.net/e25b/f/2014/308/3/c/pokemon_x_and_y_battle_background_16_by_phoenixoflight92-d8594wx.png");  
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#chardiv {
+#charDiv {
   width: 45%;
-  border: 1px solid red;
   margin-top: 20%;
-  text-align:center;
+    text-align: center;
 }
 
 progress {
   display: block;
   margin: 0 auto;
-}
-
-#bullbasaur {
-	width: 150px;
-}
-
-#char {
-	width:150px;
 }
