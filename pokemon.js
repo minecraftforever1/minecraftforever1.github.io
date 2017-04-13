@@ -64,6 +64,7 @@ specialButton.addEventListener('click', function(){
    enemyHealth = enemyHealth - specialAttack;
    enemybar.value=enemyHealth;
    enemyhptext.innerHTML = enemyHealth;
+   
 });
 
 reset.addEventListener('click', function(){
