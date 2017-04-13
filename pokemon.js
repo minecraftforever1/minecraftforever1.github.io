@@ -84,7 +84,7 @@ specialButton.addEventListener('click', function(){
 });
 
 reset.addEventListener('click', function(){
- word.innerHTML = "Charmander i chose you!";
+ word.innerHTML = "Charmander I choose you!";
  wordtwo.innerHTML = '';
   enemyHealth = 1000;
  userHealth =  1000;
