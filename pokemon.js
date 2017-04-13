@@ -28,6 +28,7 @@ var enemybar =  document.getElementById('enemybar');
 
 //var for the h1 text on top
 var word = document.getElementById("word");
+var wordtwo = document.getElementById("wordtwo")
 
 //function to randomize enemy attacks
 function randomAttack() {
@@ -45,6 +46,7 @@ attackButton.addEventListener('click', function(){
 
   var enemyAttack = randomAttack();
   if (enemyAttack === "normal") {
+    wordtwo.innerHTML = "Bulbasaur, use Razor Leaf!";
     userHealth = userHealth - 100;
     userbar.value=userHealth;
     userhptext.innerHTML = userHealth;
