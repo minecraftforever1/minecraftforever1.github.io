@@ -64,6 +64,19 @@ specialButton.addEventListener('click', function(){
    enemyHealth = enemyHealth - specialAttack;
    enemybar.value=enemyHealth;
    enemyhptext.innerHTML = enemyHealth;
+
+   var enemyAttack = randomAttack();
+  if (enemyAttack === "normal") {
+    userHealth = userHealth - 100;
+    userbar.value=userHealth;
+    userhptext.innerHTML = userHealth;
+  }
+  
+  else if (enemyAttack = "special") {
+    userHealth = userHealth - 300;
+    userbar.value=userHealth;
+    userhptext.innerHTML = userHealth;
+  }
    
 });
 
