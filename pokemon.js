@@ -53,6 +53,8 @@ attackButton.addEventListener('click', function(){
     userHealth = userHealth - 100;
     userbar.value=userHealth;
     userhptext.innerHTML = userHealth;
+    die();
+    enemydie();
 
   }
   
@@ -61,6 +63,8 @@ attackButton.addEventListener('click', function(){
     userHealth = userHealth - 300;
     userbar.value=userHealth;
     userhptext.innerHTML = userHealth;
+    die();
+    enemydie();
   }
 
   
@@ -78,12 +82,16 @@ specialButton.addEventListener('click', function(){
     userHealth = userHealth - 100;
     userbar.value=userHealth;
     userhptext.innerHTML = userHealth;
+    die();
+    enemydie();
   }
   
   else if (enemyAttack = "special") {
     userHealth = userHealth - 300;
     userbar.value=userHealth;
     userhptext.innerHTML = userHealth;
+    die();
+    enemydie();
   }
    
 });
@@ -98,6 +106,18 @@ reset.addEventListener('click', function(){
   enemyhptext.innerHTML = enemyHealth;
   userhptext.innerHTML = userHealth;
 });
+
+function die() {
+  if (userHealth <= 0 ) {
+    word.innerHTML = "Charmander was defeated!";
+  }
+}
+
+function enemydie() {
+  if(enemyHealth <= 0 ) {
+    wordtwo.innerHTML = 'Bulbasaur was defeated!';
+  }
+}
 
   
 });
