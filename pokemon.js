@@ -28,7 +28,7 @@ var enemybar =  document.getElementById('enemybar');
 
 //var for the h1 text on top
 var word = document.getElementById("word");
-var wordtwo = document.getElementById("wordtwo")
+var wordtwo = document.getElementById("word2")
 
 //function to randomize enemy attacks
 function randomAttack() {
@@ -39,20 +39,21 @@ function randomAttack() {
 
 
 attackButton.addEventListener('click', function(){
-  word.innerHTML = "charmander! use flamethrower!";
+  word.innerHTML = "Charmander! use Flamethrower!";
   enemyHealth = enemyHealth - normalAttack;
   enemybar.value=enemyHealth;
   enemyhptext.innerHTML = enemyHealth;
 
   var enemyAttack = randomAttack();
   if (enemyAttack === "normal") {
-    wordtwo.innerHTML = "Bulbasaur, use Razor Leaf!";
+    wordtwo.innerHTML = "Bulbasaur used Vine Whip!";
     userHealth = userHealth - 100;
     userbar.value=userHealth;
     userhptext.innerHTML = userHealth;
   }
   
   else if (enemyAttack = "special") {
+      wordtwo.innerHTML = "Bulbasaur, use Razor Leaf!";
     userHealth = userHealth - 300;
     userbar.value=userHealth;
     userhptext.innerHTML = userHealth;
@@ -62,7 +63,7 @@ attackButton.addEventListener('click', function(){
 });
 
 specialButton.addEventListener('click', function(){
-  word.innerHTML = "use inferno!";
+  word.innerHTML = "use Inferno!";
    enemyHealth = enemyHealth - specialAttack;
    enemybar.value=enemyHealth;
    enemyhptext.innerHTML = enemyHealth;
@@ -83,7 +84,8 @@ specialButton.addEventListener('click', function(){
 });
 
 reset.addEventListener('click', function(){
- word.innerHTML = "charmander i chose you!";
+ word.innerHTML = "Charmander i chose you!";
+ wordtwo.innerHTML = '';
   enemyHealth = 1000;
  userHealth =  1000;
   enemybar.value=enemyHealth;
