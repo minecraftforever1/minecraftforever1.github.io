@@ -3,7 +3,7 @@ $(document).on("pagecreate","#secondpage",function(event){
 
 var music = new Audio('http://66.90.93.122/ost/pokemon-gameboy-sound-collection/fllwdebjsg/107-battle-vs-wild-pokemon-.mp3');
 
-//music.play();
+music.play();
 
 //vars for the buttons
 var specialButton = document.getElementById("specialButton");
@@ -38,7 +38,7 @@ function randomAttack() {
 
 
 attackButton.addEventListener('click', function(){
-  word.innerHTML = "normal attack used";
+  word.innerHTML = "charmander! use flamethrower!";
   enemyHealth = enemyHealth - normalAttack;
   enemybar.value=enemyHealth;
   enemyhptext.innerHTML = enemyHealth;
@@ -60,7 +60,7 @@ attackButton.addEventListener('click', function(){
 });
 
 specialButton.addEventListener('click', function(){
-  word.innerHTML = "special attack!!";
+  word.innerHTML = "use inferno!";
    enemyHealth = enemyHealth - specialAttack;
    enemybar.value=enemyHealth;
    enemyhptext.innerHTML = enemyHealth;
