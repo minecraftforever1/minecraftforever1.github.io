@@ -41,7 +41,7 @@ function randomAttack() {
 
 attackButton.addEventListener('click', function(){
 
-  word.innerHTML = "Charmander! use Flamethrower!";
+  word.innerHTML = "user trainer-Charmander! use Flamethrower!";
    charman.play();
   enemyHealth = enemyHealth - normalAttack;
   enemybar.value=enemyHealth;
@@ -49,7 +49,7 @@ attackButton.addEventListener('click', function(){
 
   var enemyAttack = randomAttack();
   if (enemyAttack === "normal") {
-    wordtwo.innerHTML = "Bulbasaur used Vine Whip!";
+    wordtwo.innerHTML = "enemy trainer-Bulbasaur used Vine Whip!";
     userHealth = userHealth - 100;
     userbar.value=userHealth;
     userhptext.innerHTML = userHealth;
@@ -57,7 +57,7 @@ attackButton.addEventListener('click', function(){
   }
   
   else if (enemyAttack = "special") {
-      wordtwo.innerHTML = "Bulbasaur, use Razor Leaf!";
+      wordtwo.innerHTML = "enemy trainer-Bulbasaur, use Razor Leaf!";
     userHealth = userHealth - 300;
     userbar.value=userHealth;
     userhptext.innerHTML = userHealth;
@@ -67,8 +67,9 @@ attackButton.addEventListener('click', function(){
 });
 
 specialButton.addEventListener('click', function(){
-  word.innerHTML = "use Inferno!";
+  word.innerHTML = "user trainer-use Inferno!";
    enemyHealth = enemyHealth - specialAttack;
+    charman.play();
    enemybar.value=enemyHealth;
    enemyhptext.innerHTML = enemyHealth;
 
@@ -88,7 +89,7 @@ specialButton.addEventListener('click', function(){
 });
 
 reset.addEventListener('click', function(){
- word.innerHTML = "Charmander I choose you!";
+ word.innerHTML = "user trainer-Charmander I choose you!   enemy trainer-bulbasaur i choose you!";
  wordtwo.innerHTML = '';
   enemyHealth = 1000;
  userHealth =  1000;
