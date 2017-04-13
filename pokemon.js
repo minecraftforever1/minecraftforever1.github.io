@@ -1,7 +1,8 @@
 $(document).on("pagecreate","#secondpage",function(event){
 
-
+//vars for the sounds
 var music = new Audio('http://66.90.93.122/ost/pokemon-gameboy-sound-collection/fllwdebjsg/107-battle-vs-wild-pokemon-.mp3');
+var charman = new Audio('http://www.pokezorworld.com/anime/wav/charsqrt.wav');
 
 music.play();
 
@@ -39,7 +40,9 @@ function randomAttack() {
 
 
 attackButton.addEventListener('click', function(){
+
   word.innerHTML = "Charmander! use Flamethrower!";
+   charman.play();
   enemyHealth = enemyHealth - normalAttack;
   enemybar.value=enemyHealth;
   enemyhptext.innerHTML = enemyHealth;
@@ -50,6 +53,7 @@ attackButton.addEventListener('click', function(){
     userHealth = userHealth - 100;
     userbar.value=userHealth;
     userhptext.innerHTML = userHealth;
+
   }
   
   else if (enemyAttack = "special") {
