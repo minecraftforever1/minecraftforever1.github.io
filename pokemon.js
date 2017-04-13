@@ -59,7 +59,7 @@ attackButton.addEventListener('click', function(){
   }
   
   else if (enemyAttack = "special") {
-      wordtwo.innerHTML = "enemy trainer-Bulbasaur, use Razor Leaf!";
+      wordtwo.innerHTML = "Enemy trainer: 'Bulbasaur, use Razor Leaf!'";
     userHealth = userHealth - 300;
     userbar.value=userHealth;
     userhptext.innerHTML = userHealth;
@@ -71,7 +71,7 @@ attackButton.addEventListener('click', function(){
 });
 
 specialButton.addEventListener('click', function(){
-  word.innerHTML = "user trainer-use Inferno!";
+  word.innerHTML = "User trainer: 'use Inferno!'";
    enemyHealth = enemyHealth - specialAttack;
     charman.play();
    enemybar.value=enemyHealth;
